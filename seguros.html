@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<script>document.documentElement.classList.add('js');</script>
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.">
-	<link rel="preload" href="./css/style.css" as="style">
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+	<link rel="preload" href="./css/style.min.css" as="style">
+	<link rel="stylesheet" href="./css/style.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -53,7 +56,7 @@
 						Cobertura estadual
 					</li>
 				</ul>
-				<a href="./orcamento.html" class="botao secundario">Inscreva-se</a>
+				<a href="./orcamento.html?tipo=seguro&produto=prata" class="botao secundario">Inscreva-se</a>
 			</div>
 			<div class="seguros-item">
 				<h3 class="font-1-xl cor-p1">OURO</h3>
@@ -78,7 +81,7 @@
 						Acesso ao clube Bikcraft
 					</li>
 				</ul>
-				<a href="./orcamento.html" class="botao">Inscreva-se</a>
+				<a href="./orcamento.html?tipo=seguro&produto=ouro" class="botao">Inscreva-se</a>
 			</div>
 		</div>
 	</main>
@@ -117,28 +120,28 @@
 		<h2 class="font-1-xxl">perguntas frequentes<span class="cor-p1">.</span></h2>
 		<dl>
 			<div>
-				<dt class="font-1-mb">Quais são as formas de pagamento aceitas?</dt>
-				<dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+				<dt><button class="font-1-mb" aria-expanded="true" aria-controls="pergunta1">Quais são as formas de pagamento aceitas?</button></dt>
+				<dd id="pergunta1" class="font-2-s cor-9 ativa">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
 			</div>
 			<div>
-				<dt class="font-1-mb">Como posso entrar em contato?</dt>
-				<dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+				<dt><button class="font-1-mb" aria-expanded="false" aria-controls="pergunta2">Como posso entrar em contato?</button></dt>
+				<dd id="pergunta2" class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
 			</div>
 			<div>
-				<dt class="font-1-mb">Vocês possuem algum desconto?</dt>
-				<dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+				<dt><button class="font-1-mb" aria-expanded="false" aria-controls="pergunta3">Vocês possuem algum desconto?</button></dt>
+				<dd id="pergunta3" class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
 			</div>
 			<div>
-				<dt class="font-1-mb">Qual a garantia que possuo?</dt>
-				<dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+				<dt><button class="font-1-mb" aria-expanded="false" aria-controls="pergunta4">Qual a garantia que possuo?</button></dt>
+				<dd id="pergunta4" class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
 			</div>
 			<div>
-				<dt class="font-1-mb">Posso parcelar no boleto?</dt>
-				<dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+				<dt><button class="font-1-mb" aria-expanded="false" aria-controls="pergunta5">Posso parcelar no boleto?</button></dt>
+				<dd id="pergunta5" class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
 			</div>
 			<div>
-				<dt class="font-1-mb">Quantas trocas posso fazer ao ano?</dt>
-				<dd class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+				<dt><button class="font-1-mb" aria-expanded="false" aria-controls="pergunta6">Quantas trocas posso fazer ao ano?</button></dt>
+				<dd id="pergunta6" class="font-2-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
 			</div>
 		</dl>
 	</article>
